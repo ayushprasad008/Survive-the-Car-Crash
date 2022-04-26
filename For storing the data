@@ -1,0 +1,40 @@
+void highscore()
+{   
+	char data[100];
+	char ch;
+	cout<<"Are you a new player (if yes press 'Y' or 'y' otherwise any other key):";
+	cin>>ch;
+	cout<<endl;
+	if(ch=='Y'||ch=='y')
+{
+   ofstream outfile("high_score.txt",ios::app);
+   cout << "Enter your name: ";
+   cin>>data; 
+   char ze=':';
+   outfile << data;
+   outfile << ze;
+   outfile << score <<endl;
+   outfile.close();
+   ifstream infile("high_score.txt"); 
+   cout << "PLAYERS WHO PLAYED and their SCORE:" << endl<<endl; 
+   while(infile)
+   {
+    infile>>data; 
+    cout<<data<<endl;
+   } 
+   infile.close();
+}
+
+   else
+{
+   ifstream infile("high_score.txt"); 
+   cout << "PLAYERS WHO PLAYED:" << endl<<endl; 
+   while(infile)
+   {
+    infile>>data; 
+    cout<<data<<endl;
+   }
+   infile.close();
+}
+
+}
