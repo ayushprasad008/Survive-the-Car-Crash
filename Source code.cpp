@@ -110,7 +110,7 @@ void gameover(){
 	cout<<"\t\t     Last Game Score:"<<score<<endl;
 	cout<<"\t\t--------------------------"<<endl<<endl;
 	
-	highscore();
+	//highscore();
 	cout<<"\t\tPress 9 and then any key to go back to menu."<<endl;
 	
 		do{
@@ -174,8 +174,8 @@ void play(){
 	gotoxy(WIN_WIDTH - 6, 18);cout<<"           ";
 	gotoxy(WIN_WIDTH - 6, 19);cout<<"           ";
 	gotoxy(WIN_WIDTH - 6, 20);cout<<"           "; 
-  gotoxy(WIN_WIDTH - 6, 21);cout<<"           ";
-  gotoxy(WIN_WIDTH - 6, 22);cout<<"           ";
+        gotoxy(WIN_WIDTH - 6, 21);cout<<"           ";
+        gotoxy(WIN_WIDTH - 6, 22);cout<<"           ";
 	gotoxy(WIN_WIDTH - 6, 23);cout<<"           ";
 	gotoxy(WIN_WIDTH - 6, 24);cout<<"           ";
 	gotoxy(WIN_WIDTH - 6, 25);cout<<"           ";
