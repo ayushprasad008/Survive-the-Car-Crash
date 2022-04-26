@@ -1,0 +1,19 @@
+void PlayersList()
+{
+	system("cls");
+    ifstream infile("high_score.txt");
+   cout<<"\n--------------------------------\n"; 
+   cout << " PLAYERS LIST AND THEIR SCORE:";
+   	cout<<"\n--------------------------------\n"; 
+   	cout<<endl;
+   char data[100];
+   while(infile)
+   {
+    infile>>data; 
+    cout<<data<<endl;
+   }
+   infile.close();
+
+	cout<<"\n\nPress any key to go back to menu";
+	getch();
+}
