@@ -7,9 +7,9 @@ void PlayersList()
    	cout<<"\n--------------------------------\n"; 
    	cout<<endl;
    char data[100];
-   while(infile)
+   while(infile>>data)
    {
-    infile>>data; 
+   // infile>>data; 
     cout<<data<<endl;
    }
    infile.close();
