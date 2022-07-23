@@ -17,9 +17,9 @@ void highscore()
    outfile.close();
    ifstream infile("high_score.txt"); 
    cout << "PLAYERS WHO PLAYED and their SCORE:" << endl<<endl; 
-   while(infile)
+   while(infile>>data)
    {
-    infile>>data; 
+   // infile>>data; 
     cout<<data<<endl;
    } 
    infile.close();
